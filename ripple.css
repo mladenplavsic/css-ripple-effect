@@ -2,6 +2,7 @@
 .nav a {
     position: relative;
     overflow: hidden;
+    outline: none !important; /* remove dotted border */
 }
 .btn:after,
 .nav a:after {
@@ -10,8 +11,8 @@
     display: block;
     position: absolute;
     border-radius: 50%;
-    padding-top: 250%;
-    padding-left: 250%;
+    padding-top: 240%;
+    padding-left: 240%;
     margin-top: -120%;
     margin-left: -120%;
     opacity: 0;
