@@ -1,5 +1,5 @@
-# CSS ripple effect
+# Pure CSS ripple effect (no JavaScript)
 
-## Pure CSS implementation of Android Material design "ripple" animation on click event
+## CSS-only implementation of Android Material design "ripple" animation on click event
 
 [Demo](http://mladenplavsic.github.io/css-ripple-effect/)
