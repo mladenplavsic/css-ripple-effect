@@ -1,0 +1,24 @@
+.ripple {
+  position: relative;
+}
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: background .5s, opacity 1s;
+  background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 1000% 1000%;
+  opacity: 0;
+}
+.ripple:active:after {
+  background-size: 0 0;
+  opacity: .2;
+  transition: 0s;
+}
