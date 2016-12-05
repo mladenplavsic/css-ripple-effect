@@ -1,21 +1,20 @@
 {
   "name": "css-ripple-effect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure CSS implementation of Android Material design \"ripple\" animation on click event",
-  "main": "gulpfile.js",
-  "dependencies": {},
+  "main": "src/ripple.less",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
     "gulp-less": "^3.3.0",
     "gulp-rename": "^1.2.2"
   },
-  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mladenplavsic/css-ripple-effect.git"
   },
   "keywords": [
+    "material",
     "ripple",
     "circle",
     "effect",
