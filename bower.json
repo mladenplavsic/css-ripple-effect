@@ -1,0 +1,24 @@
+{
+  "name": "css-ripple-effect",
+  "description": "Pure CSS implementation of Android Material design \"ripple\" animation on click event",
+  "main": "src/ripple.less",
+  "authors": [
+    "Mladen Plavsic <mladen.plavsic@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ripple",
+    "circle",
+    "effect",
+    "click",
+    "animation"
+  ],
+  "homepage": "https://github.com/mladenplavsic/css-ripple-effect",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
