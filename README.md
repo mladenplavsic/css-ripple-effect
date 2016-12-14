@@ -7,3 +7,8 @@ Main advantage of this solution is that there is no DOM manipulation in order to
 ![CSS ripple effect example](https://github.com/mladenplavsic/css-ripple-effect/raw/master/resources/example-css-ripple-effect.gif "CSS ripple effect example")
 
 [Demo](http://mladenplavsic.github.io/css-ripple-effect/)
+
+Supporters
+==========
+
+- **BrowserStack**: Live, Web-Based Browser Testing https://browserstack.com
