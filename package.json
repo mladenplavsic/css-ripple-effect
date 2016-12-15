@@ -22,7 +22,7 @@
     "animation"
   ],
   "author": "Mladen Plavsic <mladen.plavsic@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mladenplavsic/css-ripple-effect/issues"
   },
