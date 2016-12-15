@@ -1,6 +1,5 @@
 {
   "name": "css-ripple-effect",
-  "version": "1.0.1",
   "description": "Pure CSS implementation of Android Material design \"ripple\" animation on click event",
   "main": "src/ripple.less",
   "devDependencies": {
