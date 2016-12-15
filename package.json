@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/mladenplavsic/css-ripple-effect/issues"
   },
-  "homepage": "http://mladenplavsic.github.io/css-ripple-effect/"
+  "homepage": "http://mladenplavsic.github.io/css-ripple-effect/",
+  "version": "1.0.5"
 }
