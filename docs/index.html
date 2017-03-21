@@ -2,254 +2,287 @@
 <html>
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width: device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <title>Pure CSS ripple effect (no JavaScript)</title>
-  <meta name="description" content="Pure CSS implementation of Android Material design &quot;ripple&quot; animation on click event">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css.map">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="ripple.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport"
+          content="width: device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Pure CSS ripple effect (no JavaScript)</title>
+    <meta name="description"
+          content="Pure CSS implementation of Android Material design &quot;ripple&quot; animation on click event">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ripple.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <meta property="og:title" content="Pure CSS ripple effect (no JavaScript)"/>
+    <meta property="og:description" content="CSS-only implementation of Android Material design " ripple
+    " animation on click event" />
+    <meta property="og:image"
+          content="https://github.com/mladenplavsic/css-ripple-effect/raw/master/docs/images/example-css-ripple-effect.gif"/>
 </head>
 <style>
-  a, button {
-    outline: none !important;
-  }
+    a, button {
+        outline: none !important;
+    }
 </style>
 <body>
 
 <!-- HEADER -->
 <div id="header_wrap" class="outer">
-  <header class="inner">
-    <h1 id="project_title">Pure CSS ripple effect (no JavaScript)</h1>
-    <h2 id="project_tagline">CSS-only implementation of Android Material design &quot;ripple&quot; animation</h2>
+    <header class="inner">
+        <h1 id="project_title">Pure CSS ripple effect (no JavaScript)</h1>
+        <h2 id="project_tagline">CSS-only implementation of Android Material design &quot;ripple&quot; animation</h2>
 
-    <p>
-      <a class="github-button" href="https://github.com/mladenplavsic/css-ripple-effect" data-icon="octicon-star" data-style="mega" data-count-href="/mladenplavsic/css-ripple-effect/stargazers" data-count-api="/repos/mladenplavsic/css-ripple-effect#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star mladenplavsic/css-ripple-effect on GitHub">Star</a>
-      <a class="github-button" href="https://github.com/mladenplavsic/css-ripple-effect/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/mladenplavsic/css-ripple-effect/network" aria-label="Fork mladenplavsic/css-ripple-effect on GitHub">Fork</a>
-      <a class="github-button" href="https://github.com/mladenplavsic" data-style="mega" aria-label="Follow @mladenplavsic on GitHub">Follow @mladenplavsic</a>
-    </p>
+        <p>
+            <a class="github-button" href="https://github.com/mladenplavsic/css-ripple-effect" data-icon="octicon-star"
+               data-style="mega" data-count-href="/mladenplavsic/css-ripple-effect/stargazers"
+               data-count-api="/repos/mladenplavsic/css-ripple-effect#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star mladenplavsic/css-ripple-effect on GitHub">Star</a>
+            <a class="github-button" href="https://github.com/mladenplavsic/css-ripple-effect/fork"
+               data-icon="octicon-repo-forked" data-style="mega"
+               data-count-href="/mladenplavsic/css-ripple-effect/network"
+               aria-label="Fork mladenplavsic/css-ripple-effect on GitHub">Fork</a>
+            <a class="github-button" href="https://github.com/mladenplavsic" data-style="mega"
+               aria-label="Follow @mladenplavsic on GitHub">Follow @mladenplavsic</a>
+        </p>
 
-  </header>
+    </header>
 </div>
 
 <!-- MAIN CONTENT -->
 <div id="main_content_wrap" class="outer">
-  <section id="main_content" class="inner">
+    <section id="main_content" class="inner">
 
-    <p>Main advantage of this solution is that there is no DOM manipulation in order to create animation. That means
-      this is faster - it doesn't use JavaScript or jQuery to animate.</p>
+        <p>Main advantage of this solution is that there is no DOM manipulation in order to create animation. That means
+            this is faster - it doesn't use JavaScript or jQuery to animate.</p>
 
-    <a class="btn btn-info btn-lg btn-block ripple">Click me to see the ripple effect</a>
+        <a class="btn btn-info btn-lg btn-block ripple">Click me to see the ripple effect</a>
 
-    <p>
-      <a href="#examples">More examples</a>
-    </p>
+        <p>This solution is also implemented in one of the biggest Bootstrap theming libraries <a
+                href="https://bootswatch.com/" target="_blank">Bootswatch</a> in their <a
+                href="https://bootswatch.com/paper/#buttons" target="_blank">Paper theme</a>.</p>
 
-    <h5>Install using bower</h5>
+        <p>
+            <a href="#examples">More examples</a>
+        </p>
 
-    <code>bower install css-ripple-effect --save</code>
+        <h5>Install using bower</h5>
 
-    <h5>Include stylesheet into your HTML file</h5>
+        <code>bower install css-ripple-effect --save</code>
 
-    <code>&lt;link rel="stylesheet" href="bower_components/css-ripple-effect/dist/ripple.min.css"&gt;</code>
+        <h5>Include stylesheet into your HTML file</h5>
 
-    <h5>Add CSS class</h5>
+        <code>&lt;link rel="stylesheet" href="bower_components/css-ripple-effect/dist/ripple.min.css"&gt;</code>
 
-    <code>&lt;a class="ripple"&gt;Link&lt;/a&gt;</code>
+        <h5>Add CSS class</h5>
 
-    <p>To enable this feature just include CSS file and put "ripple" class on HTML element. The only problem is that it
-      doesn't follow mouse location because it is not possible via CSS, so it always starts somewhere at the center of
-      the element.</p>
+        <code>&lt;a class="ripple"&gt;Link&lt;/a&gt;</code>
 
-    <h2 id="examples">Examples</h2>
+        <p>To enable this feature just include CSS file and put "ripple" class on HTML element. The only problem is that
+            it
+            doesn't follow mouse location because it is not possible via CSS, so it always starts somewhere at the
+            center of
+            the element.</p>
 
-    <p>
-      <a class="btn btn-default ripple">Default</a>
-      <a class="btn btn-primary ripple">Primary</a>
-      <a class="btn btn-success ripple">Success</a>
-      <a class="btn btn-info ripple">Info</a>
-      <a class="btn btn-warning ripple">Warning</a>
-      <a class="btn btn-danger ripple">Danger</a>
-      <a class="btn btn-link ripple">Link</a>
-    <div id="source-button" class="btn btn-primary btn-xs ripple" style="display: none;">&lt; &gt;</div>
-    </p>
+        <h2 id="examples">Examples</h2>
 
-    <p>
-      <a class="btn btn-default disabled ripple">Default</a>
-      <a class="btn btn-primary disabled ripple">Primary</a>
-      <a class="btn btn-success disabled ripple">Success</a>
-      <a class="btn btn-info disabled ripple">Info</a>
-      <a class="btn btn-warning disabled ripple">Warning</a>
-      <a class="btn btn-danger disabled ripple">Danger</a>
-      <a class="btn btn-link disabled ripple">Link</a>
-    </p>
+        <p>
+            <a class="btn btn-default ripple">Default</a>
+            <a class="btn btn-primary ripple">Primary</a>
+            <a class="btn btn-success ripple">Success</a>
+            <a class="btn btn-info ripple">Info</a>
+            <a class="btn btn-warning ripple">Warning</a>
+            <a class="btn btn-danger ripple">Danger</a>
+            <a class="btn btn-link ripple">Link</a>
+        <div id="source-button" class="btn btn-primary btn-xs ripple" style="display: none;">&lt; &gt;</div>
+        </p>
 
-    <div style="margin-bottom: 15px;">
-      <div class="btn-toolbar" style="margin: 0;">
-        <div class="btn-group">
-          <a class="btn btn-default ripple">Default</a>
-          <a class="btn btn-default dropdown-toggle ripple" data-toggle="dropdown"><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+        <p>
+            <a class="btn btn-default disabled ripple">Default</a>
+            <a class="btn btn-primary disabled ripple">Primary</a>
+            <a class="btn btn-success disabled ripple">Success</a>
+            <a class="btn btn-info disabled ripple">Info</a>
+            <a class="btn btn-warning disabled ripple">Warning</a>
+            <a class="btn btn-danger disabled ripple">Danger</a>
+            <a class="btn btn-link disabled ripple">Link</a>
+        </p>
+
+        <div style="margin-bottom: 15px;">
+            <div class="btn-toolbar" style="margin: 0;">
+                <div class="btn-group">
+                    <a class="btn btn-default ripple">Default</a>
+                    <a class="btn btn-default dropdown-toggle ripple" data-toggle="dropdown"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <a class="btn btn-primary ripple">Primary</a>
+                    <a class="btn btn-primary dropdown-toggle ripple" data-toggle="dropdown"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <a class="btn btn-success ripple">Success</a>
+                    <a class="btn btn-success dropdown-toggle ripple" data-toggle="dropdown"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <a class="btn btn-info ripple">Info</a>
+                    <a class="btn btn-info dropdown-toggle ripple" data-toggle="dropdown"><span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group">
+                    <a class="btn btn-warning ripple">Warning</a>
+                    <a class="btn btn-warning dropdown-toggle ripple" data-toggle="dropdown"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="btn-group">
-          <a class="btn btn-primary ripple">Primary</a>
-          <a class="btn btn-primary dropdown-toggle ripple" data-toggle="dropdown"><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+        <p>
+            <a class="btn btn-default btn-lg ripple">Large button</a>
+            <a class="btn btn-default ripple">Default button</a>
+            <a class="btn btn-default btn-sm ripple">Small button</a>
+            <a class="btn btn-default btn-xs ripple">Mini button</a>
+        </p>
+
+        <p>
+            <a class="btn btn-default btn-lg btn-block ripple">Block level button</a>
+        </p>
+
+        <div style="margin-bottom: 15px;">
+            <div class="btn-group btn-group-justified">
+                <a class="btn btn-default ripple">Left</a>
+                <a class="btn btn-default ripple">Middle</a>
+                <a class="btn btn-default ripple">Right</a>
+            </div>
         </div>
 
-        <div class="btn-group">
-          <a class="btn btn-success ripple">Success</a>
-          <a class="btn btn-success dropdown-toggle ripple" data-toggle="dropdown"><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+        <div style="margin-bottom: 15px;">
+            <div class="btn-toolbar">
+                <div class="btn-group">
+                    <a class="btn btn-default ripple">1</a>
+                    <a class="btn btn-default ripple">2</a>
+                    <a class="btn btn-default ripple">3</a>
+                    <a class="btn btn-default ripple">4</a>
+                </div>
+
+                <div class="btn-group">
+                    <a class="btn btn-default ripple">5</a>
+                    <a class="btn btn-default ripple">6</a>
+                    <a class="btn btn-default ripple">7</a>
+                </div>
+
+                <div class="btn-group">
+                    <a class="btn btn-default ripple">8</a>
+                    <div class="btn-group">
+                        <a class="btn btn-default dropdown-toggle ripple" data-toggle="dropdown">
+                            Dropdown
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown link</a></li>
+                            <li><a href="#">Dropdown link</a></li>
+                            <li><a href="#">Dropdown link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="btn-group">
-          <a class="btn btn-info ripple">Info</a>
-          <a class="btn btn-info dropdown-toggle ripple" data-toggle="dropdown"><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+        <div>
+            <div class="btn-group-vertical">
+                <a class="btn btn-default ripple">Button</a>
+                <a class="btn btn-default ripple">Button</a>
+                <a class="btn btn-default ripple">Button</a>
+                <a class="btn btn-default ripple">Button</a>
+            </div>
         </div>
 
-        <div class="btn-group">
-          <a class="btn btn-warning ripple">Warning</a>
-          <a class="btn btn-warning dropdown-toggle ripple" data-toggle="dropdown"><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+        <h3>Examples on Bootswatch website</h3>
 
-    <p>
-      <a class="btn btn-default btn-lg ripple">Large button</a>
-      <a class="btn btn-default ripple">Default button</a>
-      <a class="btn btn-default btn-sm ripple">Small button</a>
-      <a class="btn btn-default btn-xs ripple">Mini button</a>
-    </p>
+        <ul>
+            <li><a href="https://bootswatch.com/paper/#buttons" target="_blank">Bootswatch Paper theme demo</a></li>
+            <li><a href="https://bootswatch.com/4-alpha/materia/#buttons" target="_blank">Bootswatch witn Bootstrap
+                v4-alpha Materia theme demo</a></li>
+        </ul>
 
-    <p>
-      <a class="btn btn-default btn-lg btn-block ripple">Block level button</a>
-    </p>
+        <h2>Supporters</h2>
 
-    <div style="margin-bottom: 15px;">
-      <div class="btn-group btn-group-justified">
-        <a class="btn btn-default ripple">Left</a>
-        <a class="btn btn-default ripple">Middle</a>
-        <a class="btn btn-default ripple">Right</a>
-      </div>
-    </div>
+        <ul>
+            <li>
+                <strong>BrowserStack</strong>: Live, Web-Based Browser Testing <a href="https://browserstack.com"
+                                                                                  target="_blank">browserstack.com</a>
+            </li>
+        </ul>
 
-    <div style="margin-bottom: 15px;">
-      <div class="btn-toolbar">
-        <div class="btn-group">
-          <a class="btn btn-default ripple">1</a>
-          <a class="btn btn-default ripple">2</a>
-          <a class="btn btn-default ripple">3</a>
-          <a class="btn btn-default ripple">4</a>
-        </div>
-
-        <div class="btn-group">
-          <a class="btn btn-default ripple">5</a>
-          <a class="btn btn-default ripple">6</a>
-          <a class="btn btn-default ripple">7</a>
-        </div>
-
-        <div class="btn-group">
-          <a class="btn btn-default ripple">8</a>
-          <div class="btn-group">
-            <a class="btn btn-default dropdown-toggle ripple" data-toggle="dropdown">
-              Dropdown
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Dropdown link</a></li>
-              <li><a href="#">Dropdown link</a></li>
-              <li><a href="#">Dropdown link</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <div class="btn-group-vertical">
-        <a class="btn btn-default ripple">Button</a>
-        <a class="btn btn-default ripple">Button</a>
-        <a class="btn btn-default ripple">Button</a>
-        <a class="btn btn-default ripple">Button</a>
-      </div>
-    </div>
-
-    <h2>Supporters</h2>
-
-    <ul>
-      <li>
-        <strong>BrowserStack</strong>: Live, Web-Based Browser Testing <a href="https://browserstack.com" target="_blank">browserstack.com</a>
-      </li>
-    </ul>
-
-  </section>
+    </section>
 </div>
 
 <!-- FOOTER  -->
 <div id="footer_wrap" class="outer">
-  <footer class="inner">
-    <p class="copyright">
-      CSS ripple effect maintained by <a href="https://github.com/mladenplavsic">mladenplavsic</a>
-    </p>
-  </footer>
+    <footer class="inner">
+        <p class="copyright">
+            CSS ripple effect maintained by <a href="https://github.com/mladenplavsic">mladenplavsic</a>
+        </p>
+    </footer>
 </div>
 
 
 <script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-52141130-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-52141130-1', 'auto');
+    ga('send', 'pageview');
 
 </script>
 
