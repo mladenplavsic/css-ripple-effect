@@ -9,17 +9,19 @@ This solution is also implemented in one of the biggest Bootstrap theming librar
 Installation
 ============
 
-This library can be installed via `bower`
+This library can be installed via `npm` 
+```
+npm install css-ripple-effect
+```
+Or you can use `yarn`
+```
+yarn add css-ripple-effect --production
+```
+Or you can use `bower`
+```
+bower install css-ripple-effect
+```
 
-```
-bower install css-ripple-effect --save
-```
-
-Or you can use `npm`
-
-```
-npm install css-ripple-effect --save
-```
 
 Or you can simply download it in your project, but that way you don't have the option to update if newer versions appear.
 
